@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="bottom_dialog_item_radius">10dp</dimen>
+    <dimen name="bottom_dialog_item_padding">10dp</dimen>
+    <dimen name="bottom_dialog_item_txt_size">18sp</dimen>
+</resources>

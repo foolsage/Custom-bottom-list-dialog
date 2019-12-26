@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_edit"
+            style="@style/BottomDialogFirstItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:textColor="@color/colorBlue" />
+
+        <TextView
+            android:id="@+id/tv_copy_link"
+            style="@style/BottomDialogItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Copy link" />
+
+        <TextView
+            android:id="@+id/tv_qr_code"
+            style="@style/BottomDialogItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="QR Code" />
+
+        <TextView
+            android:id="@+id/tv_share"
+            style="@style/BottomDialogItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Share" />
+
+        <TextView
+            android:id="@+id/tv_delete"
+            style="@style/BottomDialogLastItem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:text="Delete"
+            android:textColor="@color/colorRed" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        style="@style/BottomDialogFilletItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Cancel"
+        android:textStyle="bold" />
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="BottomDialogItem">
+        <item name="android:background">@drawable/selector_bottom_dialog_item</item>
+        <item name="android:padding">@dimen/bottom_dialog_item_padding</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/colorBlack</item>
+        <item name="android:textSize">@dimen/bottom_dialog_item_txt_size</item>
+    </style>
+
+    <style name="BottomDialogFilletItem" parent="BottomDialogItem">
+        <item name="android:background">@drawable/selector_bottom_dialog_fillet_item</item>
+    </style>
+
+    <style name="BottomDialogFirstItem" parent="BottomDialogItem">
+        <item name="android:background">@drawable/selector_bottom_dialog_first_item</item>
+    </style>
+
+    <style name="BottomDialogLastItem" parent="BottomDialogItem">
+        <item name="android:background">@drawable/selector_bottom_dialog_last_item</item>
+    </style>
+
+</resources>
