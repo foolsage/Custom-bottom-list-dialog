@@ -214,35 +214,27 @@ public class CustomBottomDialog extends BottomSheetDialog {
         }
 
         public void setAllTextBold(boolean isBold){
-            if(datas.size() > 0){
-                for(Item item : datas){
-                    item.setBold(isBold);
-                }
-                notifyItemRangeChanged(0, datas.size());
+            for(Item item : datas){
+                item.setBold(isBold);
             }
+            notifyItemRangeChanged(0, datas.size());
         }
 
         public void setAllTextColor(int color){
-            if(datas.size() > 0){
-                for(Item item : datas){
-                    item.setTextColor(color);
-                }
-                notifyItemRangeChanged(0, datas.size());
+            for(Item item : datas){
+                item.setTextColor(color);
             }
+            notifyItemRangeChanged(0, datas.size());
         }
 
         public void setTextColor(int color, int position){
-            if(datas.size() > 0){
-                datas.get(position).setTextColor(color);
-                notifyItemChanged(position);
-            }
+            datas.get(position).setTextColor(color);
+            notifyItemChanged(position);
         }
 
         public void setTextBold(boolean isBold, int position){
-            if(datas.size() > 0){
-                datas.get(position).setBold(isBold);
-                notifyItemChanged(position);
-            }
+            datas.get(position).setBold(isBold);
+            notifyItemChanged(position);
         }
 
         private class Item{

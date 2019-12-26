@@ -7,7 +7,7 @@
 ##### Add the dependency :
 
     implementation 'com.google.android.material:material:1.2.0-alpha02'
-    implementation 'com.github.foolsage:Custom-bottom-list-dialog:1.1.1'
+    implementation 'com.github.foolsage:Custom-bottom-list-dialog:1.1.0'
 
 
 ### Usage
