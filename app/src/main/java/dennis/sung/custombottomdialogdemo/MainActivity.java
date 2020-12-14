@@ -64,7 +64,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     public void showCustomBottomDialog(View v){
-        customBottomDialog = new CustomBottomDialog(this, data);
+        customBottomDialog = new CustomBottomDialog(this, R.style.ThemeOverlay_App_BottomSheetDialog, data);
         customBottomDialog.setOnListItemClickedListener(this);
 //        customBottomDialog.setBottomText("Ohohohoh");
 //        customBottomDialog.setBottomTextBold(false);
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     public void showBottomDialog(View v){
         if(bottomSheetDialog == null){
-            bottomSheetDialog = new BottomSheetDialog(this);
+            bottomSheetDialog = new BottomSheetDialog(this, R.style.ThemeOverlay_App_BottomSheetDialog);
             View view = LayoutInflater.from(this).inflate(R.layout.dialog_bottom_settings, null);
             view.findViewById(R.id.tv_copy_link).setOnClickListener(this);
             view.findViewById(R.id.tv_qr_code).setOnClickListener(this);

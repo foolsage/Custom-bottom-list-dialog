@@ -30,6 +30,14 @@ public class CustomBottomDialog extends BottomSheetDialog {
     private BottomItemAdapter bottomItemAdapter;
     private OnListItemClickedListener onListItemClickedListener;
 
+    public CustomBottomDialog(@NonNull Context context, int theme, List<String> items) {
+        super(context, theme);
+        this.context = context;
+        this.items = items;
+        bottomItemAdapter = new BottomItemAdapter(this.items);
+        setContentView(R.layout.bottom_list_dialog);
+    }
+
     public CustomBottomDialog(@NonNull Context context, List<String> items) {
         super(context);
         this.context = context;
