@@ -11,7 +11,7 @@
 
 
 ### Usage
-##### New :
+##### Initial :
     customBottomDialog = new CustomBottomDialog(this, stringList);
 ##### Set listener :
     customBottomDialog.setOnListItemClickedListener(this);
